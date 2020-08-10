@@ -91,7 +91,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period,                      tagmon,         {.i = +1 } },
 	{ 0,                            XF86XK_AudioMute,               spawn,          {.v = mutecmd } },
 	{ 0,                            XF86XK_AudioLowerVolume, 	spawn,          {.v = voldowncmd } },
-	{ 0,                            XF86XK_AudioRaiseVolume,        spawn,          {.v = volupcmd } }
+	{ 0,                            XF86XK_AudioRaiseVolume,        spawn,          {.v = volupcmd } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
