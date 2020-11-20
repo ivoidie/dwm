@@ -36,9 +36,14 @@ static const Rule rules[] = {
 	 */
 	/* class     instance  title           tags mask  iscentered     isfloating  isterminal  noswallow  monitor */
 	{ "Gimp",    NULL,     NULL,           0,         0,             1,          0,           0,        -1 },
-	{ "Firefox", NULL,     NULL,           0,         0,             0,          0,          -1,        -1 },
+	{ "firefox", NULL,     NULL,           0,         0,             0,          0,          1,        -1 },
 	{ "St",      NULL,     NULL,           0,         0,             0,          1,           0,        -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,             0,          0,           1,        -1 }, /* xev */
+	{ "Xephyr",      "Xephyr",     "Xephyr on", 0,         0,             0,          0,           1,        -1 }, /* xev */
+	{ "waterfox-current", NULL,     NULL,           0,         0,             0,          0,          1,        -1 },
+	{ "Brave-browser",    NULL,     NULL,           0,         0,             0,          0,          1,        -1 },
+	{ "Zathura",    "org.pwmt.zathura",     "/tmp/vim-latex-live-preview",           0,         0,             0,          0,          1,        -1 },
+	/* { NULL,    NULL,     "/tmp/vim",           0,         0,             0,          0,          1,        -1 }, */
 };
 
 /* layout(s) */

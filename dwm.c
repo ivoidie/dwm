@@ -343,6 +343,9 @@ applyrules(Client *c)
 	class    = ch.res_class ? ch.res_class : broken;
 	instance = ch.res_name  ? ch.res_name  : broken;
 
+	/* debugging statement*/
+	fprintf(stderr, "applyrules: new client title = '%s', class = '%s', instance = '%s\n", c->name, class, instance);
+
 	for (i = 0; i < LENGTH(rules); i++) {
 		r = &rules[i];
 		if ((!r->title || strstr(c->name, r->title))
