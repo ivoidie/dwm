@@ -39,7 +39,7 @@ static const Rule rules[] = {
 	{ "firefox", NULL,     NULL,           0,         0,             0,          0,          1,        -1 },
 	{ "St",      NULL,     NULL,           0,         0,             0,          1,           0,        -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,             0,          0,           1,        -1 }, /* xev */
-	{ "Xephyr",      "Xephyr",     "Xephyr on", 0,         0,             0,          0,           1,        -1 }, /* xev */
+	{ "Xephyr",      "Xephyr",     "Xephyr on", 0,         0,             0,          0,           1,        -1 }, /* xeph */
 	{ "waterfox-current", NULL,     NULL,           0,         0,             0,          0,          1,        -1 },
 	{ "Brave-browser",    NULL,     NULL,           0,         0,             0,          0,          1,        -1 },
 	{ "Zathura",    "org.pwmt.zathura",     "/tmp/vim-latex-live-preview",           0,         0,             0,          0,          1,        -1 },
