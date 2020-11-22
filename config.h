@@ -42,7 +42,7 @@ static const Rule rules[] = {
 	{ "Xephyr",      "Xephyr",     "Xephyr on", 0,         0,             0,          0,           1,        -1 }, /* xeph */
 	{ "waterfox-current", NULL,     NULL,           0,         0,             0,          0,          1,        -1 },
 	{ "Brave-browser",    NULL,     NULL,           0,         0,             0,          0,          1,        -1 },
-	{ "Zathura",    "org.pwmt.zathura",     "/tmp/vim-latex-live-preview",           0,         0,             0,          0,          1,        -1 },
+	{ "Zathura",    "org.pwmt.zathura",     "org.pwmt.zathura",           0,         0,             0,          0,          1,        -1 },
 	/* { NULL,    NULL,     "/tmp/vim",           0,         0,             0,          0,          1,        -1 }, */
 };
 
@@ -87,6 +87,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_b,                           togglebar,      {0} },
 	{ MODKEY,                       XK_j,                           focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,                           focusstack,     {.i = -1 } },
+	{ MODKEY|ShiftMask,                       XK_k,                           pushup,     {.i = +1 } },
+	{ MODKEY|ShiftMask,                       XK_j,                           pushdown,     {.i = +1 } },
 	{ MODKEY,                       XK_i,                           incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_d,                           incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,                           setmfact,       {.f = -0.05} },
